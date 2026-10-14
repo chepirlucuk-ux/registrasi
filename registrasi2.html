@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input, 
+        .form-group select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .form-group input:focus {
+            border-color: #7b61ff;
+        }
+
+        .btn-next {
+            width: 100px;
+            padding: 10px;
+            background-color: #7b61ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-next:hover {
+            background-color: #5a44d6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-card">
+        <h2 style="color: #302b63; font-size: 24px; margin-bottom: 5px; text-align: center;">Registration</h2>
+
+        <form action="#">
+            <h3>Personal Details</h3>
+            
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label>Mobile number</label>
+                <input type="tel" placeholder="Enter mobile number">
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <select>
+                    <option value="">Enter your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Status</label>
+                <input type="text" placeholder="Enter status">
+            </div><hr>
+
+            <h3>Identity Details</h3>
+
+            <!-- jenis identitas -->
+            <div class="form-group">
+                <label>ID Type</label>
+                <input type="text" placeholder="Enter ID type">
+            </div>
+
+            <!-- nomor identitas -->
+            <div class="input-group">
+                <div class="form-group">
+                    <label>ID Number</label>
+                    <input type="text" placeholder="Enter ID number">
+                </div>
+            </div>
+
+            <!-- otoritas penerbit -->
+            <div class="form-group">
+                <label>Issue Authority</label>
+                <input type="text" placeholder="Enter issue department">
+            </div>
+
+            <!-- tanggal terbit -->
+            <div class="form-group">
+                <label>Issue Date</label>
+                <input type="date">
+            </div>
+
+            <!-- Provinsi/Negara Penerbit -->
+            <div class="form-group">
+                <label>Issue State</label>
+                <input type="text" placeholder="Enter issue state">
+            </div>
+
+            <!-- tanggal kadaluarsa -->
+            <div class="form-group">
+                <label style="color: #000000;">Expiry Date</label>
+                <input type="date">
+            </div>
+
+            <button type="submit" class="btn-next">Next</button>
+        </form>
+    </div>
+
+</body>
+</html>
